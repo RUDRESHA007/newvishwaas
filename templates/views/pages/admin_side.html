@@ -5,46 +5,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Image Uploading</title>
+	<link rel="stylesheet" href="admin_side.css">
 </head>
 
 <body>
-	<h1>To Upload Image on mongoDB</h1>
-	<hr>
-	<div>
-		<form action="/upload" method="POST" enctype="multipart/form-data">
-			<div>
-				<label for="image">select product category</label>
-				<select name="" id="">
-					<option value="none">--select product----</option>
-					<option value="row products">row products</option>
-					<option value="blended products">blended products</option>
-					<option value="powdered products">powdered products</option>
-				</select>
-			</div>
-			<div>
-				<label for="image">Upload Image</label>
-				<input type="file" id="image" name="image" value="" required>
-			</div>
-			<div>
-				<label for="name">Image Title</label>
-				<input type="text" id="name" placeholder="Name" value="" name="name" required>
-			</div>
-			<div>
-				<label for="desc">Image Description</label>
-				<textarea id="desc" name="desc" value="" rows="2" placeholder="Description" required>
+
+	<div class="container">
+		<div class="uplode_section">
+			<h1>Add  new Product</h1>
+			<form action="/upload" method="POST" enctype="multipart/form-data" class="form_section">
+				<div class="section">
+					<label for="image">select product category</label>
+					<select name="type">
+						<option value="none">--select product----</option>
+						<option value="row products">row products</option>
+						<option value="blended products">blended products</option>
+						<option value="powdered products">powdered products</option>
+					</select>
+				</div>
+				<div  class="section">
+					<label for="image">Upload Image</label>
+					<input type="file" id="image" name="image" value="" required>
+				</div>
+				<div  class="section">
+					<label for="name">Image Title</label>
+					<input type="text" id="name" placeholder="Name" value="" name="name" required>
+				</div>
+				<div  class="section">
+					<label for="desc">Image Description</label>
+					<textarea id="desc" name="desc" value="" rows="2" placeholder="Description" required>
 				</textarea>
-			</div>
-			
-			<div>
-				<button type="submit">Submit</button>
-			</div>
-		</form>
+				</div>
+
+				<div  class="section">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+
 	</div>
 
 	<hr>
-
-	
-	
 </body>
 
 </html>

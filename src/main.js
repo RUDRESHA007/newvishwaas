@@ -52,6 +52,9 @@ var upload = multer({ storage: storage });
 
 // Step 7 - the GET request handler that provides the HTML UI
 app.get('/', (req, res) => {
+    res.render('index');
+})
+app.get('/uplode', (req, res) => {
     const db = mongoose.connection;
 
     db.collection('uploads').find({}).toArray((err, data) => {
@@ -60,7 +63,7 @@ app.get('/', (req, res) => {
             res.status(500).send('An error occurred', err);
         }
         else {
-            res.render('index', { items: data });
+            res.render('items', { items: data });
             // res.send(data);
         }
     });
@@ -92,6 +95,7 @@ app.post('/upload', upload.single('image'), (req, res, next) => {
     var obj = {
         name: req.body.name,
         desc: req.body.desc,
+        product_type: req.body.type,
         img: {
             data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
             contentType: 'image/png'
@@ -103,7 +107,7 @@ app.post('/upload', upload.single('image'), (req, res, next) => {
     db.collection('uploads').insertOne(obj, (err, result) => {
 
         if (err) throw err;
-        console.log(result);
+        console.log(obj);
         res.redirect('/');
 
     });
