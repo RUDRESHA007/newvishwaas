@@ -452,6 +452,11 @@ section {
 
 }
 @media only screen and (max-width: 650px) {
+@media only screen and (max-width: 210px) {
+    body{
+        display: none;
+    }
+}
     #spices-section  .product {
         height: 16rem;
         
