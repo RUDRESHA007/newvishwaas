@@ -463,7 +463,7 @@ section {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
     body {
         display: none;
     }
