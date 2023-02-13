@@ -107,3 +107,54 @@ select,option{
     background-color: rgb(7, 7, 221);
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 700px) {
+   
+    .container .uplode_section h1{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+       
+    }
+    .container .uplode_section{
+        width: 17rem;
+        height: auto;
+       
+    }
+    .container .uplode_section .form_section{
+        width: 70%;
+        height: 100%;
+       
+    }
+   
+ 
+    .container .uplode_section .section select,input,textarea{
+        /* text-align: center; */
+        padding: .5rem;
+        font-size: .8rem;
+        /* font-weight: 00; */
+        padding: 0.3rem;
+        
+    }
+    
+    .container .uplode_section .section label{
+  
+        /* text-align: left; */
+        font-size: .8rem;
+        font-weight: 900;
+        height: 50%;
+        padding: .7rem;
+    }
+    .container .uplode_section .section button{
+        width:60%;
+        height: auto;
+        padding: .4rem;
+        font-size: .9rem;
+
+    }
+    
+    .container .uplode_section .section button:hover{
+        background-color: rgb(7, 7, 221);
+        cursor: pointer;
+    }    
+}
