@@ -585,6 +585,12 @@ section h1 {
 }
 
 @media only screen and (max-width: 550px) {
+    #spices-section .raw-products, .blended-products, .powdered-products
+    {
+            padding: 0rem;
+  
+    gap: 1rem;
+    }
     
     #spices-section .product {
         height: 13rem;
