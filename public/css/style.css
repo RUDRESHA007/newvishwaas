@@ -112,17 +112,17 @@ svg {
 
 .nav-tabs a {
     font-family: Poppins, sans-serif;
-    font-size: .8rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: 0.5rem 0.5rem 0px;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
     transition: all 0.5s ease 0s;
 }
 
 .nav-tabs a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
+    color: rgb(249, 187, 48);
+    font-weight: 900;
 }
 
 .bars {
@@ -376,7 +376,7 @@ section h1 {
 
 }
 
-.process_section .process .step  p{
+.process_section .process .step p {
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
@@ -387,6 +387,7 @@ section h1 {
 
 
 }
+
 .process_section .process .step .pro_img {
     overflow: hidden;
     background-color: #ffffff;
@@ -404,28 +405,28 @@ section h1 {
     height: 100%;
     transition: .5s ease-in;
 
-    
+
 }
+
 @keyframes processr {
 
-0%{
-    opacity: .2;
-    transform:scale(.8)
+    0% {
+        opacity: .2;
+        transform: scale(.8)
+    }
 
-}
-100%{
-    opacity: 1;
-    transform:scale(1)
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
 
-}
-    
-   
+
 }
 
 .process_section .process .step .pro_img:hover img {
     opacity: 1;
-    transform:scale(1.1);
-        cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #contact-section {
@@ -688,11 +689,14 @@ section h1 {
         padding: 0.5rem 0.5rem 1rem;
         font-size: .8rem;
     }
-    .process_section .process .step .pro_img
-    {width: 7rem;
-        height: 7rem;}
-        .process_section .process .step p{
-            font-size: .9rem;
-        }
+
+    .process_section .process .step .pro_img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .process_section .process .step p {
+        font-size: .9rem;
+    }
 
 }
