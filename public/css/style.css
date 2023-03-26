@@ -6,9 +6,11 @@
     padding: 0px;
     scroll-behavior: smooth;
     user-select: none;
+
 }
 
 body {
+
     position: relative;
     display: flex;
     align-items: center;
@@ -31,18 +33,18 @@ body {
 }
 
 .container {
-    margin-top: 0.1rem;
+    /* margin-top: 0.1rem; */
     width: 100%;
     max-width: 2000px;
     height: auto;
     position: relative;
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: #eee;
     border-radius: 2rem;
 }
 
 .subcontainer {
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 svg {
@@ -157,13 +159,13 @@ svg {
 
 .container .slideshow {
     position: relative;
-    top: 6rem;
+    top: 4.5rem;
 }
 
 .container #slider {
     margin: 15px 0px 1rem auto;
     width: 100%;
-    height: 30rem;
+    height: 36rem;
     overflow: auto;
     display: flex;
     overflow: hidden;
@@ -184,10 +186,7 @@ svg {
     object-position: 15% 100%;
 }
 
-.process {
-    width: 100%;
-    height: 30rem;
-}
+
 
 
 
@@ -202,7 +201,7 @@ section {
     width: 100%;
 }
 
-#spices-section h1 {
+section h1 {
     width: 100%;
     text-align: center;
     /* padding: 2rem; */
@@ -211,6 +210,7 @@ section {
     color: rgb(255, 0, 0);
     font-size: 2.5rem;
     text-transform: uppercase;
+    /* padding: 1rem; */
 }
 
 #spices-section {
@@ -249,12 +249,13 @@ section {
 }
 
 #spices-section .product {
+    animation: processr 2s alternate 1;
     border-radius: 1rem;
     box-shadow: rgba(108, 76, 237, 0.32) 0.1rem 0.1rem 1rem 0.1rem;
     width: 14rem;
     height: 18rem;
     padding: 1rem;
-    background-color: whitesmoke;
+    background-color: rgb(249 187 48 / 80%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -284,6 +285,7 @@ section {
 #spices-section .product:hover img {
     transform: scale(1.05);
 }
+
 #spices-section .categories-products .product img {
     transition: all 0.5s ease-in-out 0s;
     width: 100%;
@@ -292,28 +294,31 @@ section {
     top: 0px;
     padding: 0rem;
 }
-#spices-section .categories-products .product .description{
+
+#spices-section .categories-products .product .description {
     top: -20rem;
     bottom: 0;
     width: 100%;
     height: 100%;
     background: #21212182;
     display: flex;
-    gap:.8rem;
+    gap: .8rem;
     transition: .8s ease-in-out;
 }
-#spices-section .categories-products .product:hover .description{
-   
-    top:0rem;
+
+#spices-section .categories-products .product:hover .description {
+
+    top: 0rem;
 
 }
 
 #spices-section .categories-products .product .description h2 {
     color: #ff8700;
     font-size: 1.2rem;
-   
+
     width: 100%;
 }
+
 #spices-section .categories-products .product .description p {
     color: #ffffff;
     font-size: .9rem;
@@ -341,7 +346,7 @@ section {
     text-transform: capitalize;
     text-align: center;
     font-size: 1.3rem;
-    color: rgb(241, 31, 31);
+    color: rgb(255, 0, 0);
     font-family: Ubuntu, sans-serif;
 }
 
@@ -351,6 +356,77 @@ section {
     font-size: .7rem;
 }
 
+.process_section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(8 25 43);
+    margin: .1rem;
+
+}
+
+.process_section .process {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.process_section .process .step  p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    color: white;
+    font-family: Poppins, sans-serif;
+
+
+}
+.process_section .process .step .pro_img {
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    animation: processr 2s alternate 1;
+
+
+}
+
+.process_section .process .step .pro_img img {
+
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in;
+
+    
+}
+@keyframes processr {
+
+0%{
+    opacity: .2;
+    transform:scale(.8)
+
+}
+100%{
+    opacity: 1;
+    transform:scale(1)
+
+}
+    
+   
+}
+
+.process_section .process .step .pro_img:hover img {
+    opacity: 1;
+    transform:scale(1.1);
+        cursor: pointer;
+}
 
 #contact-section {
     display: flex;
@@ -429,6 +505,7 @@ section {
     font-family: Ubuntu, sans-serif;
     font-size: .6rem;
 }
+
 @media only screen and (max-width: 600px) {
     .navbar .logo {
         width: 6rem;
@@ -514,7 +591,7 @@ section {
 
     .container #slider {
         width: 100%;
-        height: 11rem;
+        height: 13rem;
     }
 
     #spices-section {
@@ -611,5 +688,11 @@ section {
         padding: 0.5rem 0.5rem 1rem;
         font-size: .8rem;
     }
+    .process_section .process .step .pro_img
+    {width: 7rem;
+        height: 7rem;}
+        .process_section .process .step p{
+            font-size: .9rem;
+        }
 
-}   
+}
