@@ -565,8 +565,8 @@ section h1 {
         transition: all 0.5s ease-in-out 0s;
         display: flex;
         flex-wrap: wrap;
-        height: 11rem;
-        width: 9rem;
+        height: 16rem;
+        width: 11rem;
         background-color: rgb(54, 52, 52);
         background: red;
         position: absolute;
@@ -584,7 +584,8 @@ section h1 {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+    
     #spices-section .product {
         height: 13rem;
         width: 9rem;
@@ -657,7 +658,7 @@ section h1 {
         font-weight: 900;
     }
 
-    #spices-section h1 {
+   section h1 {
         font-size: 1.5rem;
     }
 
@@ -691,8 +692,8 @@ section h1 {
     }
 
     .process_section .process .step .pro_img {
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     .process_section .process .step p {
